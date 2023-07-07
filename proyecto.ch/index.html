@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>comida</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <!--insercion de documento css-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--links de insercion de estilos a traves de pagwebs-->
+  </head>
+
+  <body>
+    <header class="header" id="inicio">
+      <img class="logo" src="img/logo.jpg" alt="logo" />
+      <img src="img/hamburguesa.svg" alt="" class="cosito" />
+      <nav class="menu-navegacion">
+        <ul class="nav-list">
+          <li><a href="#inicio">inicio</a></li>
+          <li><a href="#servicio">Quienes somos</a></li>
+          <li><a href="#Portafolios">Delicias</a></li>
+          <li><a href="#Expertos">Combos</a></li>
+          <li><a href="#Expertos">Combos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="contenedor head">
+        <h1 class="titulo">THE FOOD</h1>
+        <p class="copy">
+          Pizza, hamburguesa,bebidas… ¿Cómo pueden ser tan rico? Nos preguntamos
+          lo mismo todos los días.
+        </p>
+      </div>
+    </header>
+    <main>
+      <!--todo el contenido principal va dentro de main-->
+      <section class="service contenedor" id="servicio">
+        <h2 class="subtitulo">Quienes somos</h2>
+        <div class="contenedor-servicio">
+          <img src="img/chef.svg" alt="" class="eso" />
+          <div class="checklist servicio">
+            <div class="service">
+              <h3 class="n-service">
+                <span class="number">1 </span>Diseño Web
+              </h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Reprehenderit atque ducimus fugit natus quas hic sed ratione
+                enim incidunt ipsa.
+              </p>
+            </div>
+            <div class="service">
+              <h3 class="n-service">
+                <span class="number">2 </span>Diseño Web
+              </h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Reprehenderit atque ducimus fugit natus quas hic sed ratione
+                enim incidunt ipsa.
+              </p>
+            </div>
+            <div class="service">
+              <h3 class="n-service">
+                <span class="number">3</span> Diseño Web
+              </h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Reprehenderit atque ducimus fugit natus quas hic sed ratione
+                enim incidunt ipsa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery" id="portafolio">
+        <div class="contenedor">
+          <h2 class="subtitulo">Productos Destacados</h2>
+          <div class="contenedor-galleria">
+            <img
+              src="img/burguer+papas.jpg"
+              alt="hamburguesa y papas"
+              class="img-galleria"
+            />
+            <img src="img/bebidas.jpg" alt="bebidas" class="img-galleria" />
+            <img src="img/burguer.jpg" alt="bebidas" class="img-galleria" />
+            <img src="img/lunch.jpg" alt="lunch" class="img-galleria" />
+            <img src="img/pizza.jpg" alt="comida" class="img-galleria" />
+            <img src="img/bebidasnatu.jpg" alt="" class="img-galleria" />
+          </div>
+        </div>
+      </section>
+
+      <setion class="contenedor" id="expertos">
+        <h2 class="subtitulo">COMBOS</h2>
+        <section class="experts">
+          <div class="cont-expert">
+            <img src="img/combo.svg" alt="" />
+            <h3 class="n-expert">Para dos</h3>
+          </div>
+          <div class="cont-expert">
+            <img src="img/ensalada.svg" alt="" />
+            <h3 class="n-expert">Sano</h3>
+          </div>
+          <div class="cont-expert">
+            <img src="img/papas.svg" alt="" />
+            <h3 class="n-expert">Para vos</h3>
+          </div>
+        </section>
+      </setion>
+    </main>
+    <footer id="contacto">
+      <div class="container">
+        <form id="contact" action="registro.php" method="post">
+          <h3>¡Contactanos!</h3>
+          <h4>Para recibir una atención personalizada</h4>
+          <fieldset>
+            <input
+              placeholder="Tu nombre"
+              type="text"
+              name="nombre"
+              tabindex="1"
+              required
+              autofocus
+            />
+          </fieldset>
+          <fieldset>
+            <input
+              placeholder="Coloque su Email"
+              type="text"
+              name="mail"
+              tabindex="2"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <input
+              placeholder="Su Número de Telefono"
+              type="number"
+              name="telefono"
+              tabindex="3"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <input
+              placeholder="Su Sitio Web (opcional)"
+              type="text"
+              name="web"
+              tabindex="4"
+            />
+          </fieldset>
+          <fieldset>
+            <textarea
+              placeholder="Introduzca su mensaje aquí...."
+              name="mensaje"
+              tabindex="5"
+              required
+            >
+            </textarea>
+          </fieldset>
+          <fieldset>
+            <button
+              name="submit"
+              type="submit"
+              id="contact-submit"
+              data-submit="...Sending"
+            >
+              Enviar
+            </button>
+          </fieldset>
+          <p class="by">
+            Designed by
+            <a
+              href="https://www.facebook.com/designlogoup/"
+              target="_blank"
+              title=""
+              >mica.com</a
+            >
+          </p>
+        </form>
+      </div>
+      <div class="line"></div>
+      <!--linea blanca-->
+      <div class="footer-content">
+        <div class="contacto">
+          <h3 class="brand">THE FOOD</h3>
+          <p>©thefood2023</p>
+        </div>
+        <div class="social-media">
+          <!--links de las redes con sus iconos-->
+          <a
+            href="https://www.facebook.com/designlogoup/"
+            class="social-media-icon"
+          >
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a href="/" class="social-media-icon">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/designlogoup/"
+            class="social-media-icon"
+          >
+            <i class="bx bxl-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <!--insercion de documento js-->
+    <script src=""></script>
+  </body>
+</html>
