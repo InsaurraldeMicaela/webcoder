@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>comida</title>
-    <link rel="stylesheet" href="estilo.css" />
+    <title>The Food Store</title>
+    <link rel="stylesheet" href="./css/estilo.css" />
     <!--insercion de documento css-->
     <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
@@ -22,24 +22,19 @@
 
   <body>
     <header class="header" id="inicio">
-      <img class="logo" src="img/logo.jpg" alt="logo" />
       <img src="img/hamburguesa.svg" alt="" class="cosito" />
-      <nav class="menu-navegacion">
-        <ul class="nav-list">
-          <li><a href="#inicio">inicio</a></li>
-          <li><a href="#servicio">Quienes somos</a></li>
-          <li><a href="#Portafolios">Delicias</a></li>
-          <li><a href="#Expertos">Combos</a></li>
-          <li><a href="#Expertos">Combos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
+      <nav class="menu-navegacion" id="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicio">Quienes Somos</a>
+        <a href="#productos">Productos Destacados</a>
+        <a href="#combos">Combos</a>
+        <a href="#contacto">Contacto</a>
       </nav>
-
-      <div class="contenedor head">
-        <h1 class="titulo">THE FOOD</h1>
+      <div class="contenedor head" id="inicio">
+        <h1 class="titulo">THE FOOD STORE</h1>
         <p class="copy">
           Pizza, hamburguesa,bebidas… ¿Cómo pueden ser tan rico? Nos preguntamos
-          lo mismo todos los días.
+          lo mismo
         </p>
       </div>
     </header>
@@ -52,38 +47,43 @@
           <div class="checklist servicio">
             <div class="service">
               <h3 class="n-service">
-                <span class="number">1 </span>Diseño Web
+                <span class="number">1 </span> Dónde Nace
               </h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Reprehenderit atque ducimus fugit natus quas hic sed ratione
-                enim incidunt ipsa.
+                The Food Store nace en Buenos Aires, Argentina , con la premisa
+                de ofrecer hamburguesas y pizzas de calidad premium, con sitios
+                virtuales de ambiente moderno, distendido y agradable, diseñados
+                en detalle.
               </p>
             </div>
             <div class="service">
               <h3 class="n-service">
-                <span class="number">2 </span>Diseño Web
+                <span class="number">2 </span>Nuestra Mision
               </h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Reprehenderit atque ducimus fugit natus quas hic sed ratione
-                enim incidunt ipsa.
+                Fascinar a nuestros clientes con la experiencia tanto como
+                nosotros lo estamos,haciendo The Food Store un centro de culto
+                para los fanáticos de las hamburguesas,siempre estamos
+                encontrando formas de demostrar nuestro compromiso con nuestros
+                clientes y nuestra comida.
               </p>
             </div>
             <div class="service">
               <h3 class="n-service">
-                <span class="number">3</span> Diseño Web
+                <span class="number">3</span>Somos Apasionados
               </h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Reprehenderit atque ducimus fugit natus quas hic sed ratione
-                enim incidunt ipsa.
+                Por nuestras Hamburguesas 🍔 artesanales 100% carne vacuna con
+                delicioso pan de papa y 🍟 ☞ 🥑 opciones veggie 🥗 ensaladas.
+                Sentí la calidad de cada bocado 🍟💥 ¡Nuestras papas fritas te
+                volarán la cabeza! 😋🔥 Acompañalas con cerveza 🍺, gaseosas 🥤
+                o incluso una rica limonada 🍋
               </p>
             </div>
           </div>
         </div>
       </section>
-      <section class="gallery" id="portafolio">
+      <section class="gallery" id="productos">
         <div class="contenedor">
           <h2 class="subtitulo">Productos Destacados</h2>
           <div class="contenedor-galleria">
@@ -101,32 +101,32 @@
         </div>
       </section>
 
-      <setion class="contenedor" id="expertos">
-        <h2 class="subtitulo">COMBOS</h2>
+      <setion class="contenedor" id="combos">
         <section class="experts">
+          <h2 class="subtitulo">COMBOS</h2>
           <div class="cont-expert">
             <img src="img/combo.svg" alt="" />
-            <h3 class="n-expert">Para dos</h3>
+            <h3 class="n-expert">PARA DOS</h3>
           </div>
           <div class="cont-expert">
             <img src="img/ensalada.svg" alt="" />
-            <h3 class="n-expert">Sano</h3>
+            <h3 class="n-expert">SANO</h3>
           </div>
           <div class="cont-expert">
             <img src="img/papas.svg" alt="" />
-            <h3 class="n-expert">Para vos</h3>
+            <h3 class="n-expert">PARA VOS</h3>
           </div>
         </section>
       </setion>
     </main>
     <footer id="contacto">
       <div class="container">
-        <form id="contact" action="registro.php" method="post">
+        <form id="contact" action="/php/registro.php" method="POST">
           <h3>¡Contactanos!</h3>
           <h4>Para recibir una atención personalizada</h4>
           <fieldset>
             <input
-              placeholder="Tu nombre"
+              placeholder="Nombre Completo"
               type="text"
               name="nombre"
               tabindex="1"
@@ -162,8 +162,9 @@
           </fieldset>
           <fieldset>
             <textarea
-              placeholder="Introduzca su mensaje aquí...."
-              name="mensaje"
+              placeholder="Introduzca su comentario aquí...."
+              type="text"
+              name="comentario"
               tabindex="5"
               required
             >
@@ -217,9 +218,8 @@
         </div>
       </div>
     </footer>
-
-    <script src="js/menu.js"></script>
     <!--insercion de documento js-->
-    <script src=""></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/ligthbox.js"></script>
   </body>
 </html>
