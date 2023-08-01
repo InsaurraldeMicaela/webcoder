@@ -1,0 +1,560 @@
+* {
+  /* para resetear los bordes,margen y los elementos hereden el valor asignado*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*desplazamiento lindo*/
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Amiri", serif;
+  font-family: "Open {Sans", sans-serif;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden; /*todo lo que se desborde se oculte*/
+  margin: auto; /*lo centra todo*/
+  padding: 60px 0; /*pading:rellleno,de lados*/
+}
+
+header {
+  /*una img con gradiente encima*/
+  height: 100vh; /*vh lo hace flexible*/
+  background-image: linear-gradient(
+      to left,
+      rgba(249, 213, 35, 0.504) 0%,
+      #ff4e518b 100%
+    ),
+    url(/img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.head {
+  text-align: center;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.cosito {
+  /*menu lateral*/
+  position: fixed; /*fijo en toda la pag*/
+  top: 30px;
+  right: 30px;
+  background: #fff;
+  width: 40x;
+  height: 40px;
+  cursor: pointer; /*al posar el cursor,aparece la manita*/
+  border-radius: 10px; /*sombrita*/
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5); /*sombrita al contenedor,color o foto*/
+}
+
+.menu-navegacion {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30vw;
+  height: 100%;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: transform 0.3s ease-in-out; /*se transforma*/
+  transform: translate(110%); /*javascript*/ /*se transforma un 110%*/
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5); /*sombrita al contenedor,color o foto*/
+}
+
+.menu-navegacion a {
+  /*boton*/
+  color: #fff;
+  text-decoration: none;
+}
+
+.spread {
+  /*el menu nav se transforma con javasc haderiendo esta clase al hacer click*/
+  transform: translate(0);
+}
+
+.titulo {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.copy {
+  font-weight: 300;
+  font-size: 25px;
+}
+
+/*Nuestro servicio*/
+.subtitulo {
+  text-align: center;
+  font-weight: 300;
+  color: rgb(253, 160, 133);
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+.contenedor-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/*anda lenta la web en esta parte,nuestro service*/
+.contendor-servicio {
+  width: 50%;
+}
+
+.eso {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.servicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*botones*/
+.service {
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.n-service {
+  margin-bottom: 7px;
+  color: #f9d423;
+}
+
+.number {
+  display: inline-block;
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: 700;
+  line-height: 30px;
+  margin-right: 5px;
+}
+
+.gallery {
+  background: #f2f2f2;
+}
+
+.contenedor-galleria {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.img-galleria {
+  object-fit: cover;
+  width: 30%;
+  display: block;
+  margin-bottom: 15px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5); /*le da sombrita a las IMG*/
+  cursor: pointer; /*al pasar el cursor sale la manita*/
+}
+
+.imagen-light {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(100%); /*javascript*/
+  transition: transform 0.2s ease-in-out;
+}
+
+.show {
+  transform: translate(0); /*javascript*/
+}
+
+.agregar-img {
+  object-fit: cover;
+  width: 50%;
+  border-radius: 10px;
+  transform: scale(0); /*javascript*/
+  transition: transform 0.3s 0.2s; /*javascript*/
+}
+
+.showImage {
+  transform: scale(1); /*javascript*/
+}
+
+.close {
+  /*se juntan la img con la x icono*/
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  cursor: pointer; /*al pasar el cursor sale la manita*/
+}
+
+.experts h2 {
+  /*iconos combos*/
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.cont-expert {
+  /*iconos combos*/
+  width: 40%;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cont-expert img {
+  /*iconos combos*/
+  width: 80%;
+}
+
+.n-expert {
+  /*lestras de iconos combos*/
+  display: inline-block;
+  margin-top: 20px;
+  width: 100%;
+  font-weight: 400;
+  color: #fda085;
+  margin-bottom: 50px;
+}
+
+/*formu*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smooth: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 30px;
+  color: #777;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: #f9f9f9;
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #4caf50;
+  color: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: #43a047;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.by {
+  text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+
+/*Footer*/
+
+footer {
+  background: #f83600;
+  padding-bottom: 0.1px; /* si comento el paddinboton se me colapsa la linea con el footer
+  border: 1px solid negro,es otra opcion para que funcionen ambos,intervienen en el margen*/
+}
+
+.footer-content {
+  /*iconos de redes social*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.contacto {
+  width: 40%;
+  color: #fff;
+}
+
+.brand {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.brand + p {
+  font-weight: 500;
+}
+
+.social-media {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-media-icon {
+  display: inline-block;
+  margin-left: 20px;
+  width: 60px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+}
+
+.social-media-icon:hover {
+  /* ocurre la transformacion :hover*/
+  background: #fff;
+  color: #f83600;
+}
+
+.social-media-icon i {
+  font-size: 30px;
+  line-height: 60px;
+}
+
+.line {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 2px;
+  background: #fff;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+/* RESPONSIVE*/
+@media screen and (max-width: 800px) {
+  /*pasa a ser respónsive*/
+  .menu-navegacion {
+    width: 50vw;
+  }
+
+  .titulo {
+    font-size: 40px;
+  }
+
+  .contenedor-servicio img {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+
+  .checklist-servicio {
+    width: 80%;
+  }
+
+  .service {
+    margin-bottom: 30px;
+  }
+
+  .agregar-img {
+    width: 60%;
+  }
+
+  .img-galleria {
+    width: 45%;
+  }
+
+  .cont-expert {
+    width: 80%;
+  }
+
+  .footer-content {
+    justify-content: center;
+  }
+
+  .social-media {
+    width: 80%;
+    justify-content: space-evenly;
+  }
+
+  .social-media-icon {
+    margin-left: 0;
+  }
+
+  .social-media-i {
+    margin-left: 0;
+  }
+
+  .contacto {
+    text-align: center;
+    width: 80%;
+    margin-bottom: 40px;
+  }
+}
+
+/* RESPONSIVE*/
+@media screen and (max-width: 500px) {
+  /*adaptamos la pag a un max 500px*/
+  .menu-navegacion {
+    width: 65vw;
+  }
+
+  .hamburgesa {
+    top: 20px;
+    right: 20px;
+  }
+
+  .titulo {
+    font-size: 30px;
+  }
+
+  .subtitulo {
+    font-size: 30px;
+  }
+
+  .agregar-img {
+    width: 95%;
+  }
+
+  .img-galleria {
+    width: 95%;
+  }
+
+  .social-media {
+    /*iconos redes sociales*/
+    width: 100%;
+  }
+
+  .contacto {
+    width: 90%;
+  }
+}
